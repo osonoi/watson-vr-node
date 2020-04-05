@@ -193,5 +193,17 @@ IBM CloudのCloud Foundry アプリケーションと　IBM Cloud上のサービ
 
 >URLは　＜アプリケーション名＞.mybluemix.net　となります。
 
+# Dockerで実行する場合
+ソースコードをクローンしてPCにダウンロード
+git clone https://github.com/osonoi/watson-vr-node.git
+cd watson-vr-node/
+
+Docker イメージを作成
+docker build -t watson-vr-node .
+
+Dockerでアプリを起動（Credentialは実行時のディレクトリーにダウンロード済み）
+docker run -d -p 3000:3000 --env-file=./ibm-credentials.env --env CLASSIFIER_ID=food watson-vr-node
+（カスタムモデルの場合：例）
+docker run -d -p 3000:3000 --env-file=./ibm-credentials.env --env CLASSIFIER_ID=DefaultCustomModel_1536117779 watson-vr-node
 
 
