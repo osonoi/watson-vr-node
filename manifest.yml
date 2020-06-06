@@ -1,9 +1,9 @@
 ---
 applications:
-- name: <Set Your Application Name>
+- name: osonoi-vr>
   buildpacks:
     - nodejs_buildpack
   command: node -max_old_space_size=2048 app.js
   env:
-    CLASSIFIER_ID: <Set Your CLASSIFIER_ID>
+    CLASSIFIER_ID: DefaultCustomModel_1348942006
   memory: 256M
