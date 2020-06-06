@@ -78,7 +78,7 @@ Visual Recognition サービスを作成していない場合は、作成しま�
 ## 3. アプリケーションのClone
 下記のコマンドを実行しアプリケーションのコードをGitHubのリポジトリからクローンします。
 ```
-git clone https://github.com/kyokonishito/watson-vr-node.git
+git clone https://github.com/osonoi/watson-vr-node.git
 ```
 クローンが完了したら以下のコマンドを入力してください。
 ```
