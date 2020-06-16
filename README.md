@@ -141,10 +141,7 @@ ibmcloud cf push --no-start
 1. Click `Visit App URL
 
 
-![Model](https://github.com/osonoi/watson-vr-node/blob/master/images/maskgit1.png)
-
-
-![mask](https://github.com/osonoi/watson-vr-node/images/maskgit1.png)
+![Model](https://github.com/osonoi/watson-vr-node/blob/master/images/maskgit2.png)
 
 6.　Apps on Smartphone.
  There is a QR code in the bottom of the apps menu. Take that with yiur smart phone. That bring you smartphone apps.
