@@ -123,53 +123,40 @@ ibmcloud cf push --no-start
 
 ## 5. Connect Visual Recognition to Apps
 
-1. https://cloud.ibm.com/login よりIBM Cloudにログイン
+1. Back to IBM cloud portal https://cloud.ibm.com
 
-2. 表示されたダッシュボードの[リソースの要約]から`リソースの表示`をクリックする。
+2. Display resource
 
-3. `Cloud Foundry Apps`の文字をクリックする。
+3. Clck `Cloud Foundry Apps`
 
-4. `4. アプリケーションのIBM Cloudへのデプロイ`の` 1. manifest.ymlの編集`で設定したアプリケーション名が表示されているので、そのアプリケーション名をクリックする。
+4. Click apps you created.
 
-5. 左のメニューから`接続`をクリックする。
+5. Click "Connect"
 
-6. `「接続の作成」`ボタンをクリックする。
+6. Click `Create connection`
 
-7.  表示された `Visual Recognition`のサービスの行にマウスポインターを乗せると、右側に`「接続」`ボタンが表示される。表示された`「接続」`をクリックする。
+7. Find `Visual Recognition` and connect
 
-8. `IAM対応サービスのの接続`というウィンドウが表示されるので、デフォルト値ののまま、`「接続」`ボタンをクリックする。
+8. Click 'Connect'
 
-9. `アプリの再ステージ`というウィンドウが表示されるので、`「再ステージ」`ボタンをクリックする。
+9. Select `application re-stage"
 
-10. 再ステージが完了したら、経路ボタンの右にある縦三つの点(・・・)のメニューをクリックし、`開始`をクリックする。
+## 6. Launch Apps
+1. Click `Visit App URL
 
-## 6. アプリケーションの動作確認
-1. アプリケーションが稼働中になったら、`アプリ URL にアクセス`をクリックする。
-アプリケーションの画面が表示されます。
-`「ファイルの選択」`から写真を選んだ後、各青ボタンをクリックして、Visual Recognitionの結果を確認します。
+![Model](https://github.com/osonoi/watson-vr-node/blob/master/images/maskgit2.png)
 
-- Watsonで認識（Watson学習済みモデルを利用):
-  -W atsonが写真を認識した内容を表示します。
+2.　Apps on Smartphone.
+ There is a QR code in the bottom of the apps menu. Take that with yiur smart phone. That bring you smartphone apps.
+ 
+# In the case of Docker
+$ git clone https://github.com/osonoi/watson-vr-node.git
+$ cd watson-vr-node/
 
-- Watsonで認識（カスタムモデルを利用):
-  - カスタムモデル認識したクラスを表示します。
+Create Docker image
+$ docker build -t watson-vr-node .
 
-2.　スマートフォンでの確認
-一番下にQRコードが表示されているので、それをスマートフォンのカメラで読んでUアプリケーションのRLにアクセすると、スマートフォンでも結果を確認できます。スマートフォンでは`「ファイルの選択」`ボタンでその場で撮った写真も認識可能です。
-
->URLは　＜アプリケーション名＞.mybluemix.net　となります。
-
-# Dockerで実行する場合
-ソースコードをクローンしてPCにダウンロード
-git clone https://github.com/osonoi/watson-vr-node.git
-cd watson-vr-node/
-
-Docker イメージを作成
-docker build -t watson-vr-node .
-
-Dockerでアプリを起動（Credentialは実行時のディレクトリーにダウンロード済み）
-docker run -d -p 3000:3000 --env-file=./ibm-credentials.env --env CLASSIFIER_ID=food watson-vr-node
-（カスタムモデルの場合：例）
+Launch app on local dockerDocker
 docker run -d -p 3000:3000 --env-file=./ibm-credentials.env --env CLASSIFIER_ID=DefaultCustomModel_1536117779 watson-vr-node
 
 
