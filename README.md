@@ -2,7 +2,6 @@
 Visual Recognition Web application using IBM Watson Visual Recognition
 This apps is identify whether your mas properly have on your face.
 
-## 1. preparation
 ### 1. Login to IBM Cloud account (Lite accout is OK)
 Please register if you don't have account [here](https://cloud.ibm.com/registration?cm_mmc=Email_Events-_-Developer_Innovation-_-WW_WW-_-nishito\tokyo\japan&cm_mmca1=000019RS&cm_mmca2=10004805&cm_mmca3=M99938765&cvosrc=email.Events.M99938765&cvo_campaign=000019RS
 )
@@ -46,7 +45,7 @@ OK
 
 
 
-## 2. Create Visual Recognition service
+## 3. Create Visual Recognition service
 If you already create the service , please start at 5 below. 
 
 1. https://cloud.ibm.com/login to login
@@ -71,7 +70,7 @@ And create 2 class, 1, Mask OK 2 Mask NG
 9. After Training click on Associated Service name and find classifier ID and momorize it.
 
 
-## 3. Clone the application to your PC, mac
+## 4. Clone the application to your PC, mac
 ```
 git clone https://github.com/osonoi/watson-vr-node.git
 ```
@@ -79,9 +78,9 @@ git clone https://github.com/osonoi/watson-vr-node.git
 cd watson-vr-node
 ```
 
-## 4. Chenge these items and deploy to IBM cloud.
-### 1. Edit `manifest.yml`
-#### 1-1) line 3　<Set Your Application Name>
+## 5. Chenge these items and deploy to IBM cloud.
+### 5-1. Edit `manifest.yml`
+#### 5-1-1) line 3　<Set Your Application Name>
 Change to your apps name. This should be unique in the all IBM cloud apps.
 <br/>
 ex): 
@@ -89,7 +88,7 @@ ex):
 - name: myid0701-watson-vr
 ````
 
-#### 1-2) line 8　<Set Your CLASSIFIER_ID>
+#### 5-1-2) line 8　<Set Your CLASSIFIER_ID>
 Input Visual Recognition, classifier ID.
 
 env:
@@ -109,19 +108,19 @@ applications:
   memory: 256M
 ```
 
-### 2. Login to IBM Cloud
+### 5-2. Login to IBM Cloud
 ```
 $ ibmcloud login -r us-south
 ```
 ```
 ibmcloud target --cf
 ```
-### 3. Upload App to IBM Cloud
+### 5-3. Upload App to IBM Cloud
 ```
 ibmcloud cf push --no-start
 ```
 
-## 5. Connect Visual Recognition to Apps
+## 5-4. Connect Visual Recognition to Apps
 
 1. Back to IBM cloud portal https://cloud.ibm.com
 
@@ -141,7 +140,7 @@ ibmcloud cf push --no-start
 
 9. Select Action and click 'start'
 
-## 6. Launch Apps
+## 5-6. Launch Apps
 1. Click `Visit App URL
 
 
@@ -150,7 +149,7 @@ ibmcloud cf push --no-start
 
 ![mask](https://github.com/osonoi/watson-vr-node/images/maskgit1.png)
 
-2.　Apps on Smartphone.
+6.　Apps on Smartphone.
  There is a QR code in the bottom of the apps menu. Take that with yiur smart phone. That bring you smartphone apps.
  
 # In the case of Docker
