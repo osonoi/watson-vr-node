@@ -91,9 +91,6 @@ ex):
 #### 5-1-2) line 8　<Set Your CLASSIFIER_ID>
 Input Visual Recognition, classifier ID.
 
-env:
-    CLASSIFIER_ID: DefaultCustomModel_1941703287
-````
 
 example:
 ```
