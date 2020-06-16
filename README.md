@@ -139,7 +139,7 @@ ibmcloud cf push --no-start
 
 8. Click 'Connect'
 
-9. Select `application re-stage"
+9. Select Action and click 'start'
 
 ## 6. Launch Apps
 1. Click `Visit App URL
@@ -159,4 +159,4 @@ $ docker build -t watson-vr-node .
 Launch app on local dockerDocker
 docker run -d -p 3000:3000 --env-file=./ibm-credentials.env --env CLASSIFIER_ID=DefaultCustomModel_1536117779 watson-vr-node
 
-
+![Model](https://github.com/osonoi/watson-vr-node/blob/master/images/maskgit2.png)
