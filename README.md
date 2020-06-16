@@ -64,7 +64,7 @@ If you already create the service , please start at 5 below.
 7. Please reffer to this document https://cloud.ibm.com/docs/visual-recognition?topic=visual-recognition-tutorial-custom-classifier
 And create 2 class, 1, Mask OK 2 Mask NG
 
-![Model](https://github.com/osonoi/watson-vr-node/images/maskgit1.png)
+![Model](https://github.com/osonoi/watson-vr-node/blob/master/images/maskgit1.png)
 
 8. Click "Train Model" to train.
 
