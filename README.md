@@ -144,7 +144,7 @@ ibmcloud cf push --no-start
 ## 6. Launch Apps
 1. Click `Visit App URL
 
-![Model](https://github.com/osonoi/watson-vr-node/blob/master/images/maskgit2.png)
+![mask](https://github.com/osonoi/watson-vr-node/blob/master/images/maskgit2.png)
 
 2.　Apps on Smartphone.
  There is a QR code in the bottom of the apps menu. Take that with yiur smart phone. That bring you smartphone apps.
@@ -159,4 +159,4 @@ $ docker build -t watson-vr-node .
 Launch app on local dockerDocker
 docker run -d -p 3000:3000 --env-file=./ibm-credentials.env --env CLASSIFIER_ID=DefaultCustomModel_1536117779 watson-vr-node
 
-![Model](https://github.com/osonoi/watson-vr-node/blob/master/images/maskgit2.png)
+
