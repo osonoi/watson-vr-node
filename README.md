@@ -144,6 +144,7 @@ ibmcloud cf push --no-start
 ## 6. Launch Apps
 1. Click `Visit App URL
 
+
 ![mask](https://github.com/osonoi/watson-vr-node/blob/master/images/maskgit2.png)
 
 2.　Apps on Smartphone.
