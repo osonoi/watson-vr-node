@@ -2,6 +2,8 @@
 Visual Recognition Web application using IBM Watson Visual Recognition
 This apps is identify whether your mas properly have on your face.
 
+![Program](https://github.com/osonoi/watson-vr-node/blob/master/images/program.png)
+
 ### 1. Login to IBM Cloud account (Lite accout is OK)
 Please register if you don't have account [here](https://cloud.ibm.com/registration?cm_mmc=Email_Events-_-Developer_Innovation-_-WW_WW-_-nishito\tokyo\japan&cm_mmca1=000019RS&cm_mmca2=10004805&cm_mmca3=M99938765&cvosrc=email.Events.M99938765&cvo_campaign=000019RS
 )
