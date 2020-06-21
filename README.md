@@ -148,9 +148,9 @@ ibmcloud cf push --no-start
 6.　Apps on Smartphone.
  There is a QR code in the bottom of the apps menu. Take that with yiur smart phone. That bring you smartphone apps.
  
-![app1](https://github.com/osonoi/watson-vr-node/blob/master/images/app1.png)
+![app1](https://github.com/osonoi/watson-vr-node/blob/master/images/app1.PNG)
 
-![app2](https://github.com/osonoi/watson-vr-node/blob/master/images/app2.png)
+![app2](https://github.com/osonoi/watson-vr-node/blob/master/images/app2.PNG)
 
  
 # In the case of Docker
